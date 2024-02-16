@@ -1,0 +1,23 @@
+<%-include("layout/header")%>
+<form action="api/users/register" method="POST" enctype="application/x-www-form-urlencoded">
+<div>
+      username:<input id="input" type="text" name="name" value="">
+  </div>
+  <div>
+      Email:<input id="input" type="email" name="email" value="">
+  </div>  
+   <div>
+      Password:<input id="input" type="password" name="password" value="">
+  </div> 
+   <div>
+     Image:<input id="input" type="file" name="image" value="">
+  </div> 
+   <div>
+     Phone: <input id="input" type="number" name="phone" value="">
+  </div> 
+    <div>
+      Address:<input id="input" type="text" name="address" value="">
+  </div>
+  <button type="submit">submit</button>
+</form>
+<%-include("layout/footer")%>

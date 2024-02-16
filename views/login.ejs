@@ -1,0 +1,10 @@
+<%includes='layout/header.ejs'%>
+<div>
+<%-include("layout/header")%>
+<form action="api/auth/login" method="post">
+    Email:<input type="email" name="email" placeholder="Email enter Your"><br>
+    password:<input type="password" name="password" placeholder="password Enter"><br>
+    <button type="submit">submit</button>
+  </form>
+</div>
+<%includes='layout/footer.ejs'%>
