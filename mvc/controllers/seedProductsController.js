@@ -1,4 +1,4 @@
-let Product=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/productSchema.js');
+let Product=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/productSchema.js');
 const createError=require('http-errors');
 const data={
   products:[

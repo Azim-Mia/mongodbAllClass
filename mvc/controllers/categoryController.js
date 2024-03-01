@@ -1,8 +1,8 @@
 const slugify=require('slugify');
-const {categoryServiceItem,findAllCategorisService,findOneCategoryService,updateCategorySarvice,deleteOneCategoryService}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/servises/categoryService.js')
-let Category=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/categorySchema.js');
+const {categoryServiceItem,findAllCategorisService,findOneCategoryService,updateCategorySarvice,deleteOneCategoryService}=require('/data/data/com.termux/files/home/mongodbAllClass/servises/categoryService.js')
+let Category=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/categorySchema.js');
 const createError=require('http-errors');
-const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js');
+const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
 
 const handleCategory=async(req,res,next)=>{
   try{

@@ -1,4 +1,4 @@
-const {smtpUser,smtpPassword}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js')
+const {smtpUser,smtpPassword}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const nodemailer = require("nodemailer");
 const createErtor=require('http-errors');
 const transporter = nodemailer.createTransport({

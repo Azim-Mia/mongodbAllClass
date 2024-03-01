@@ -1,25 +1,25 @@
 require('dotenv').config();
-const deleteRouter=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/delete.js');
-const cloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/config/cloudinary.js');
-const UserCloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/delete.js');
-const {uploadfile}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/middleware/fileUpload.js');
-const UtmarChar=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/utmarcharSchema.js');
-const villageRoute=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/villageRoute.js')
+const deleteRouter=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/delete.js');
+const cloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/config/cloudinary.js');
+const UserCloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/delete.js');
+const {uploadfile}=require('/data/data/com.termux/files/home/mongodbAllClass/middleware/fileUpload.js');
+const UtmarChar=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/utmarcharSchema.js');
+const villageRoute=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/villageRoute.js')
 let {User}=require('./mvc/models/schema.js');
-const {validateUserRegistation,loginValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/src/validatos/auth.js');
-const {runValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/src/validatos/index.js');
-const {isLoggedIn,isAdmined}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/middleware/authentical/auth.js');
+const {validateUserRegistation,loginValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/src/validatos/auth.js');
+const {runValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/src/validatos/index.js');
+const {isLoggedIn,isAdmined}=require('/data/data/com.termux/files/home/mongodbAllClass/middleware/authentical/auth.js');
 const {createJSONWebToken}=require('/data/data/com.termux/files/home/mongodbAllClass/Helper/jwttokenkey.js');
-const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js');
- const routers= require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/router.js');
- const authRouter= require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/authRouter.js');
- const categoryRouter=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/categoryRouter.js');
- const seedProductRouter=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/seedProductRouter.js');
- const productRouter=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/productRouter.js');
- const simpleRouter=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/routers/simpleRouter.js');
+const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
+ const routers= require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/router.js');
+ const authRouter= require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/authRouter.js');
+ const categoryRouter=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/categoryRouter.js');
+ const seedProductRouter=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/seedProductRouter.js');
+ const productRouter=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/productRouter.js');
+ const simpleRouter=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/routers/simpleRouter.js');
  
 ///require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/config/productDB');
-const {jwtAccessKey}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');
+const {jwtAccessKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const bodyParser=require('body-parser');
 const express=require('express');
 const cors=require('cors');

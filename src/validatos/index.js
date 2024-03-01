@@ -1,5 +1,5 @@
 const {validationResult}=require('express-validator');
-const {successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js')
+const {successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js')
 const runValidation=async(req,res,next)=>{
   try{
     const errors=validationResult(req);

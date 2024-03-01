@@ -1,5 +1,5 @@
 const {Schema,model}=require('mongoose');
-let Category=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/categorySchema.js');
+let Category=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/categorySchema.js');
 const productSchema= new Schema({
   name:{
    type:String,

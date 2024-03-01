@@ -1,5 +1,5 @@
-const logger=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/controllers/winstonLoggerController.js');
-const {db_url}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');
+const logger=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/controllers/winstonLoggerController.js');
+const {db_url}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const mongoose=require('mongoose');
 const dbconnect=async(option={})=>{
   try{

@@ -1,4 +1,4 @@
-const {simpleSchema}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
+const {simpleSchema}=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
 const createError=require('http-errors');
 const getUser=(req,res,next)=>{
   try{

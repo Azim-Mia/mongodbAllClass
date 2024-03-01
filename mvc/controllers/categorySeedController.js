@@ -1,4 +1,4 @@
-const Category=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/categorySchema.js');
+const Category=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/categorySchema.js');
 const data={
   productArray:[
   {

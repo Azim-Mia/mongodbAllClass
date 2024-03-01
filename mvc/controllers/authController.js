@@ -1,17 +1,17 @@
-let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
+let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
 require('cookie-parser');
 const mongoose=require('mongoose');
 const jwt = require('jsonwebtoken');
-const {findWithId}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/servises/findSingleUser.js');
-const {jwtAccessKey,jwtActivationKey,clientUrl,forgetPasswordKey,refreshTokenKey}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');
+const {findWithId}=require('/data/data/com.termux/files/home/mongodbAllClass/servises/findSingleUser.js');
+const {jwtAccessKey,jwtActivationKey,clientUrl,forgetPasswordKey,refreshTokenKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const bcrypt=require('bcryptjs');
 const createError=require('http-errors');
-const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js');
+const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
 const {createJSONWebToken}=require('/data/data/com.termux/files/home/mongodbAllClass/Helper/jwttokenkey.js');
-const {setAccessTokenCookie,setRefreshTokenCookie,setForgetPasswordCookie}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/helper/cookie.js');
-const emailWithNodeMailer=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/helper/emails.js');
-const cheakUserExsist=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/helper/cheakUserEmailExists.js');
-const sendEmail=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/helper/sendEmail.js');
+const {setAccessTokenCookie,setRefreshTokenCookie,setForgetPasswordCookie}=require('/data/data/com.termux/files/home/mongodbAllClass/helper/cookie.js');
+const emailWithNodeMailer=require('/data/data/com.termux/files/home/mongodbAllClass/helper/emails.js');
+const cheakUserExsist=require('/data/data/com.termux/files/home/mongodbAllClass/helper/cheakUserEmailExists.js');
+const sendEmail=require('/data/data/com.termux/files/home/mongodbAllClass/helper/sendEmail.js');
 const registerProcess=async(req,res,next)=>{
     const {name,email,password,image,phone,address}=req.body;
     const emailMatch= await User.findOne({email:email});

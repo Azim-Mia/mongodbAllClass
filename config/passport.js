@@ -1,4 +1,4 @@
-let User=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
+let User=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
 const createError=require('http-errors');
 const bcrypt=require('bcryptjs')
 const passport=require('passport');

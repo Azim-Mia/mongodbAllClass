@@ -1,4 +1,4 @@
-const {getUser,createUser}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/controllers/simpleController.js')
+const {getUser,createUser}=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/controllers/simpleController.js')
 const express=require('express');
 const simpleRouter=express.Router();
 simpleRouter.get('/getUser',getUser);

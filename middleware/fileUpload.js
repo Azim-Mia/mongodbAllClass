@@ -33,7 +33,7 @@ const upload = multer({ storage: storage
 });
 //module.exports= {upload}
 */
-const {file_dir}=require("/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js");
+const {file_dir}=require("/data/data/com.termux/files/home/mongodbAllClass/secret.js");
 const multer  = require('multer')
 const storage = multer.diskStorage({
 destination: function (req, file, cb) {

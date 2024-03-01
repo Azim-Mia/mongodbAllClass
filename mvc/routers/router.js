@@ -1,12 +1,12 @@
-let User=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
+let User=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
 const {validateUserRegistation,
-loginValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/src/validatos/auth.js');
-const {runValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/src/validatos/index.js');
+loginValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/src/validatos/auth.js');
+const {runValidation}=require('/data/data/com.termux/files/home/mongodbAllClass/src/validatos/index.js');
 const {
 isLoggedIn,
 isLoggedOut,
 isAdmined
-}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/middleware/authentical/auth.js');
+}=require('/data/data/com.termux/files/home/mongodbAllClass/middleware/authentical/auth.js');
 const express=require('express');
 const routers=express.Router();
 const {

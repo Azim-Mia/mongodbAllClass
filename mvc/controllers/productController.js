@@ -1,7 +1,7 @@
 const slugify=require('slugify');
-let Product=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/productSchema.js');
-const {getSingleProductsService,updateSingleProductService}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/servises/productService.js');
-const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js');
+let Product=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/productSchema.js');
+const {getSingleProductsService,updateSingleProductService}=require('/data/data/com.termux/files/home/mongodbAllClass/servises/productService.js');
+const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
 const createProduct=async(req,res,next)=>{
   const {name,description,price,image,quantity,shipping,category,rating}=req.body;
 //const imageBufferString=req.file.buffer.toString('base64'); //problem recherse korte hobe buffering problem

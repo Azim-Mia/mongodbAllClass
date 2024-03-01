@@ -1,7 +1,7 @@
 const jwt=require('jsonwebtoken');
 const createError=require('http-errors');
-let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
-const {jwtAccessKey}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');
+let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
+const {jwtAccessKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const isLoggedIn=(req,res,next)=>{
   try{
  const token=req.cookies.accessToken;

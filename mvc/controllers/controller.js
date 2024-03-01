@@ -1,12 +1,12 @@
-const cloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/config/cloudinary.js');
+const cloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/config/cloudinary.js');
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken');
-const {jwtActivationKey,smtpUser,smtpPassword,clientUrl}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');
-const sendEmail=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/helper/sendEmail.js');
-const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/responseHandle/responsehandle.js');
-const {findWithId}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/servises/findSingleUser.js');
+const {jwtActivationKey,smtpUser,smtpPassword,clientUrl}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
+const sendEmail=require('/data/data/com.termux/files/home/mongodbAllClass/helper/sendEmail.js');
+const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
+const {findWithId}=require('/data/data/com.termux/files/home/mongodbAllClass/servises/findSingleUser.js');
 const createError=require('http-errors');
-let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/schema.js');
+let {User}=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/schema.js');
 const searchUser=async(req,res,next)=>{
   try{
    const search=req.query.search || "";

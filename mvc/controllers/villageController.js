@@ -1,5 +1,5 @@
 const createError=require('http-errors');
-const UtmarChar=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/mvc/models/utmarcharSchema.js')
+const UtmarChar=require('/data/data/com.termux/files/home/mongodbAllClass/mvc/models/utmarcharSchema.js')
 const villageController=async(req,res,next)=>{
   try{
    const {name,fatherName,motherName,email,nid,birth,divition,district,thana,union,village ,description,address,postCode,home,image}=req.body;
