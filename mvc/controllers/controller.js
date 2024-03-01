@@ -1,7 +1,7 @@
 const cloudinary=require('/data/data/com.termux/files/home/mongodbAllClass/config/cloudinary.js');
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken');
-const {jwtActivationKey,smtpUser,smtpPassword,clientUrl}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
+const {jwtAccessKey,jwtActivationKey,clientUrl,forgetPasswordKey,refreshTokenKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const sendEmail=require('/data/data/com.termux/files/home/mongodbAllClass/helper/sendEmail.js');
 const {errorResponse, successResponse}=require('/data/data/com.termux/files/home/mongodbAllClass/responseHandle/responsehandle.js');
 const {findWithId}=require('/data/data/com.termux/files/home/mongodbAllClass/servises/findSingleUser.js');

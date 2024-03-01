@@ -1,5 +1,5 @@
 const UserCloudinary=require("/data/data/com.termux/files/home/mongodbAllClass/mvc/models/delete.js");
-const {defaultImagePath}=require("/data/data/com.termux/files/home/mongodbAllClass/secret.js");
+const {jwtAccessKey,jwtActivationKey,clientUrl,forgetPasswordKey,refreshTokenKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const cloudinary=require("/data/data/com.termux/files/home/mongodbAllClass/config/cloudinary.js");
 const deleteController= async(req,res,next)=>{
  /*const {imagePath}=require('/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js');

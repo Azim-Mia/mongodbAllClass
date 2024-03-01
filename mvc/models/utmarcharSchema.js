@@ -1,6 +1,6 @@
 const bcrypt=require('bcryptjs');
 const {Schema, model}=require('mongoose');
-const {defaultImagePath}=require("/data/data/com.termux/files/home/mongodbAllClass/secret.js");
+const {jwtAccessKey,jwtActivationKey,clientUrl,forgetPasswordKey,refreshTokenKey}=require('/data/data/com.termux/files/home/mongodbAllClass/secret.js');
 const schema= new Schema({
   name:{
     type:String,
