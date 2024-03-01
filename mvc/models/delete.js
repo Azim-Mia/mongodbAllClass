@@ -1,5 +1,5 @@
 const {Schema, model}=require('mongoose');
-const {defaultImagePath}=require("/data/data/com.termux/files/home/mongodbAllClass/searchPagination/secret.js");
+const {defaultImagePath}=require("/data/data/com.termux/files/home/mongodbAllClass/secret.js");
 const schema= new Schema({
   
   name:{
